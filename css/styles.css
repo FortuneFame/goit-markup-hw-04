@@ -23,7 +23,14 @@ html {
     color: #212121;
 }
 
+.button-link,
+.hero-button{
+    outline:none;
+}
+
+
 a{
+    outline:none;
     text-decoration: none; 
 }
 
@@ -359,6 +366,11 @@ header{
     justify-content: space-between;
 }
 
+.user-iten:hover,
+.user-iten:focus{
+    border: 1px solid #2196F3;
+}
+
 .user-iten{
     width: 170px;
     height: 90px;
@@ -366,11 +378,6 @@ header{
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
-}
-
-.user-iten:hover,
-.user-iten:focus{
-    border: 1px solid #2196F3;
 }
 
 /* Футер */
