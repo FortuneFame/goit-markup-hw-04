@@ -1,4 +1,4 @@
-/* Глобальный border-box */
+/*======= Глобальный border-box ======*/
 html {
     box-sizing: border-box;
   }
@@ -13,7 +13,7 @@ html {
   }
 
 
-/* Обращение ко всей странице */
+/*======= Обращение ко всей странице ======*/
 
 
 *{
@@ -86,7 +86,7 @@ img{
 }
 
 
-/* Все ховеры и фокусы */
+/*====== Все ховеры и фокусы =======*/
 
 .feedback-tel:hover,
 .feedback-tel:focus,
@@ -104,7 +104,7 @@ img{
 
 
 
-/* Логотип */
+/*====== Логотип ======*/
 
 .my-logo-1{
     font-family: Raleway;
@@ -126,7 +126,7 @@ img{
     line-height: 1.19;
     color: #ffffff;
 }
-/* Кнопка */
+/*======== Кнопка =======*/
 
 .hero-button{
     border: 1px solid transparent;
@@ -135,6 +135,7 @@ img{
     padding-right: 31px;
     padding-bottom: 9px;
     padding-left: 31px;
+    cursor: pointer;
 
     background: #188CE8;
     color: #FFFFFF;
@@ -146,7 +147,7 @@ img{
 }
 
 
-/* Шапка */
+/*====== Шапка ======*/
 
 .logo{
     margin-right: 85px;
@@ -216,17 +217,27 @@ header{
 }
 
 
-/* Герой */
+/*===== Герой =====*/
 
 .section-hero{
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-color: gray;
-
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ), 
+      url('../images/hero/Hero_img.jpg');
+    /* background-image: linear-gradient
+    (to right,rgba(47, 48, 58, 0.8)) */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .hero{
     text-align: center;
@@ -245,25 +256,54 @@ header{
 }
 
 
-/* О Нас */
+/*====== О Нас ======*/
 
 .list-skills{
     display: flex;
 }
+
 .skill{
     width: 270px;
 }
+
+
+.skill::before{
+    display: block;
+    content: "";
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+
+    background-size: 70px 70px ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+}
+
+/* Иконки о нас */
+
+.icon-antenna::before{
+    background-image: url(../images/about_us/icon-antenna.svg);
+}
+
+.icon-clock::before{
+    background-image: url(../images/about_us/icon-clock.svg);
+}
+
+.icon-planning::before{
+    background-image: url(../images/about_us/icon-planning.svg);
+}
+
+.icon-astronaut::before{
+    background-image: url(../images/about_us/icon-astronaut.svg);
+}
+
+
+
 .skill:not(:last-child){
     margin-right: 30px;
 }
-.icon-block{
 
-    margin-bottom: 30px;
-
-    width: 270px;
-    height: 120px;
-    background: #F5F4FA;
-}
 .skill-name{
 
     margin-bottom: 10px;
@@ -282,7 +322,7 @@ header{
     color: #757575;
 }
 
-/* Чем мы занимаемся */
+/*========= Чем мы занимаемся ========*/
 
 .section-lessons{
     text-align: center;
@@ -314,7 +354,7 @@ header{
     font-weight: bold;
 }
 
-/* Наша команда */
+/*======= Наша команда =======*/
 
 .team{
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -355,7 +395,7 @@ header{
 
 
 
-/*  Постоянные клиенты  */
+/*========= Постоянные клиенты ==========*/
 
 .clients{
 
@@ -374,13 +414,14 @@ header{
 .user-iten{
     width: 170px;
     height: 90px;
+    cursor: pointer;
 
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
 }
 
-/* Футер */
+/*=========== Футер ============*/
 
 .footer{
     background: #2F303A;
@@ -405,6 +446,7 @@ header{
 
 .link-map{
     font-style: normal;
+    cursor: pointer;
 
     color: #FFFFFF;
 }
@@ -413,6 +455,7 @@ header{
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
+    cursor: pointer;
 
     color: rgba(255, 255, 255, 0.6);
 }
@@ -430,7 +473,7 @@ header{
 }
 
 
-/* =====Портфолио Меню ======*/
+/*===== Портфолио Меню ======*/
 
 .main-menu{
     margin-bottom: 50px;
@@ -457,6 +500,7 @@ header{
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
+    cursor: pointer;
 
     border: 1px solid transparent;
     font-weight: 500;
@@ -479,7 +523,7 @@ header{
 
 }
 
-/* Галерея */
+/*========= Галерея =========*/
 
 
 .examples{
