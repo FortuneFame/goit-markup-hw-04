@@ -26,6 +26,7 @@ html {
 }
 
 a {
+  display: block;
   outline: none;
   text-decoration: none;
 }
