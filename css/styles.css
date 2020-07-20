@@ -203,6 +203,15 @@ header {
   margin-right: 50px;
 }
 
+.feedback {
+  display: inline-flex;
+  align-items: center;
+}
+
+.adress-icon {
+  align-items: center;
+}
+
 /*===== Герой =====*/
 
 .section-hero {
@@ -267,19 +276,19 @@ header {
 /* Иконки о нас */
 
 .icon-antenna::before {
-  background-image: url(../images/about_us/icon-antenna.svg);
+  background-image: url(../images/svg/icon-antenna.svg);
 }
 
 .icon-clock::before {
-  background-image: url(../images/about_us/icon-clock.svg);
+  background-image: url(../images/svg/icon-clock.svg);
 }
 
 .icon-planning::before {
-  background-image: url(../images/about_us/icon-planning.svg);
+  background-image: url(../images/svg/icon-planning.svg);
 }
 
 .icon-astronaut::before {
-  background-image: url(../images/about_us/icon-astronaut.svg);
+  background-image: url(../images/svg/icon-astronaut.svg);
 }
 
 .skill:not(:last-child) {
