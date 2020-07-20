@@ -80,18 +80,20 @@ img {
   letter-spacing: 0.03em;
 }
 
+.icon {
+  fill: #afb1b8;
+}
+
+/* .icon:hover {
+  fill: #2196f3;
+} */
+
 /*====== Все ховеры и фокусы =======*/
 
-.feedback-tel:hover,
-.feedback-tel:focus,
-.feedback-mail:hover,
-.feedback-mail:focus,
 .link-user-logo:hover,
 .link-user-logo:focus,
 .iten:focus,
-.iten:hover,
-.social-link:hover,
-.social-link:focus {
+.iten:hover {
   color: #2196f3;
 }
 
@@ -117,6 +119,7 @@ img {
   line-height: 1.19;
   color: #ffffff;
 }
+
 /*======== Кнопка =======*/
 
 .hero-button {
@@ -208,8 +211,24 @@ header {
   align-items: center;
 }
 
-.adress-icon {
+.feedback-position {
+  display: inline-flex;
   align-items: center;
+}
+
+.adress {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.adress:hover,
+.adress:focus {
+  color: #2196f3;
+}
+
+.feedback a :hover,
+.feedback a :focus {
+  color: #2196f3;
 }
 
 /*===== Герой =====*/
@@ -382,6 +401,38 @@ header {
   color: #757575;
 }
 
+.team-social-links {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.social {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-links:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links:hover,
+.social-links:focus {
+  border-radius: 50%;
+  background-color: #2196f3;
+}
+
 /*========= Постоянные клиенты ==========*/
 
 .clients {
@@ -397,14 +448,25 @@ header {
   border: 1px solid #2196f3;
 }
 
+.link-user-logo {
+}
+
 .user-iten {
-  width: 170px;
-  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 170px;
+  min-height: 90px;
   cursor: pointer;
 
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.logo-clients:hover {
+  fill: #188ce8;
 }
 
 /*=========== Футер ============*/
