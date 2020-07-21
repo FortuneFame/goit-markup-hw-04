@@ -57,8 +57,7 @@ img {
   padding-right: 15px;
 }
 
-.feedback-mail,
-.feedback-tel {
+.feedback-position {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -83,8 +82,8 @@ img {
 .icon {
   fill: #afb1b8;
 }
-
-/* .icon:hover {
+/* 
+.icon:hover {
   fill: #2196f3;
 } */
 
@@ -221,14 +220,16 @@ header {
   height: 16px;
   margin-right: 10px;
 }
-.adress:hover,
-.adress:focus {
-  color: #2196f3;
-}
 
-.feedback a :hover,
-.feedback a :focus {
+/* .feedback-position :hover {
+  fill: #2196f3;
   color: #2196f3;
+} */
+
+.feedback :hover,
+.feedback :focus {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 /*===== Герой =====*/
