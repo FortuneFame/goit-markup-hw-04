@@ -75,8 +75,6 @@ img {
 
 /*====== Все ховеры и фокусы =======*/
 
-.link-user-logo:hover,
-.link-user-logo:focus,
 .iten:focus,
 .iten:hover {
   color: #2196f3;
@@ -103,6 +101,15 @@ img {
   font-size: 26px;
   line-height: 1.19;
   color: #ffffff;
+}
+/* Иконки */
+
+.address-icon {
+  margin-right: 10px;
+  --color2: #757575;
+}
+.address-icon:hover {
+  --color2: #2196f3;
 }
 
 /*======== Кнопка =======*/
@@ -191,30 +198,24 @@ header {
   margin-right: 50px;
 }
 
-.block-feedback {
-  display: block;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.feedback-position {
-  display: flex;
-}
-
-.feedback :hover {
+.addrdess-link:hover svg {
   fill: #2196f3;
+}
+.addrdess-link:hover {
   color: #2196f3;
 }
 
-.adress {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
+.feedback {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  cursor: pointer;
 }
 
-.icon {
-  fill: #afb1b8;
+.addrdess-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*===== Герой =====*/
@@ -233,8 +234,6 @@ header {
       rgba(47, 48, 58, 0.8)
     ),
     url("../images/hero/Hero_img.jpg");
-  /* background-image: linear-gradient
-    (to right,rgba(47, 48, 58, 0.8)) */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
