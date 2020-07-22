@@ -57,12 +57,6 @@ img {
   padding-right: 15px;
 }
 
-.feedback-position {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .conteiner {
   width: 1200px;
   padding-left: 15px;
@@ -78,14 +72,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
-.icon {
-  fill: #afb1b8;
-}
-/* 
-.icon:hover {
-  fill: #2196f3;
-} */
 
 /*====== Все ховеры и фокусы =======*/
 
@@ -193,7 +179,7 @@ header {
   display: flex;
 }
 
-.header-list-link {
+.header-list-link:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -205,14 +191,20 @@ header {
   margin-right: 50px;
 }
 
-.feedback {
-  display: inline-flex;
+.block-feedback {
+  display: block;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .feedback-position {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+}
+
+.feedback :hover {
+  fill: #2196f3;
+  color: #2196f3;
 }
 
 .adress {
@@ -221,15 +213,8 @@ header {
   margin-right: 10px;
 }
 
-/* .feedback-position :hover {
-  fill: #2196f3;
-  color: #2196f3;
-} */
-
-.feedback :hover,
-.feedback :focus {
-  color: #2196f3;
-  fill: #2196f3;
+.icon {
+  fill: #afb1b8;
 }
 
 /*===== Герой =====*/
