@@ -205,17 +205,10 @@ header {
   color: #2196f3;
 }
 
-.feedback {
+.addrdess-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  cursor: pointer;
-}
-
-.addrdess-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /*===== Герой =====*/
