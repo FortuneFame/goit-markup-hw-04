@@ -120,15 +120,16 @@ img {
   color: #2196f3;
 }
 
-.iten-portfolio::after {
+.iten-studio::after {
   content: "";
   display: block;
-
-  width: 100%;
+  width: 49px;
   height: 4px;
 
   background-color: #2196f3;
-  border-radius: -2px;
+  border-radius: 2px;
+  margin-top: 28px;
+  position: absolute;
 }
 
 .feedback-tel,
@@ -440,6 +441,19 @@ header a {
   fill: #2196f3;
 }
 
+.iten-portfolio::after {
+  content: "";
+  display: block;
+
+  width: 77px;
+  height: 4px;
+
+  background-color: #2196f3;
+  border-radius: 2px;
+  margin-top: 28px;
+  position: absolute;
+}
+
 /*=========== Футер ============*/
 
 .footer {
@@ -488,10 +502,6 @@ header a {
 
   color: #ffffff;
 }
-
-/* .subcribe {
-  min-width: 570px;
-} */
 
 /* Иконки футера */
 
@@ -564,7 +574,7 @@ header a {
 
 /*===== Портфолио Меню ======*/
 
-header {
+.portfolio {
   border-bottom: 1px solid #ececec;
 }
 
